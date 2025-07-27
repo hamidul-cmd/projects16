@@ -108,3 +108,7 @@
 body {
   background-color: #FAFAFA;
 }
+
+header ul li a.active {
+  color: var(--color-primary);
+}
