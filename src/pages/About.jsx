@@ -15,10 +15,10 @@ function About() {
         <div className="grid mt-12.5 ll2:mt-14.5 3xl:mt-20 grid-cols-1 ll:grid-cols-2 ll2:grid-cols-3 gap-7.5 ll:gap-3 3xl:gap-4">
         {aboutdata.map((item, index) =>{
           return(
-            <div key={index} className="p-5 rounded-xl">
-              <div className="text-50 leading-[68px]">{index+1}</div>
-              <h2>{item.title}</h2>
-              <p>{item.description}</p>
+            <div key={index} className="p-5 rounded-xl group hover:bg-primary transition-all duration-200 ease-in cursor-pointer">
+              <div className="text-50 leading-[68px] font-bold text-gray-60 mb-1 font-releway group-hover:text-white transition-all duration-200 ease-in 3xl:text-[72px]">{index+1}</div>
+              <h2 className="text-lg font-bold l-150 text-primary mb-3 group-hover:text-white transition-all duration-200 ease-in 3xl:text-2xl">{item.title}</h2>
+              <p className="text-base font-roboto l-150 text-gray-60 group-hover:text-[#F7F6FE] transition-all duration-200 ease-in">{item.description}</p>
             </div>
           )
         })}
