@@ -108,50 +108,55 @@ function Footer() {
             after 9pm will get a reponse the following day.
           </p>
         </div>
-          <div className="py-10 flex flex-col items-center space-y-10 border-b border-primary">
-            <a href="/">
-              {" "}
-              <picture>
-                <source
-                  srcSet="https://i.imgur.com/m2nZ9eQ.png"
-                  media="(min-width: 1440px)"
-                  height="43px"
-                  width="156px"
-                />
-                <source
-                  srcSet="https://i.imgur.com/4VrP2Bc.png"
-                  media="(min-width: 1030px)"
-                  height="33px"
-                  width="113px"
-                />
-                <img src="https://i.imgur.com/83mqXDN.png" alt="logo" />
-              </picture>
-            </a>
-            <ul className="flex justify-center gap-10">
-              {footerlinks.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <a
-                      href={item.link}
-                      className="text-sm font-releway text-gray-40 l-150 3xl:text-lg 3xl:font-medium"
-                    >
-                      {item.title}
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-            <ul className="flex gap-5">
-              {sociallinks.map((item, index) => {
-                return (
-                  <li key={index} className="p-2 bg-primary rounded-full text-white hover:scale-110 transition-all duration-300 ease-in-out">
-                    <a href={item.link}>{item.icon}</a>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-          <p className="text-sm font-releway text-center py-10 3xl:text-lg l-150 ll2:text-base">Copyright Ideapeel Inc © 2023. All Right Reserved</p>
+        <div className="py-10 flex flex-col items-center space-y-10 border-b border-primary">
+          <a href="/">
+            {" "}
+            <picture>
+              <source
+                srcSet="https://i.imgur.com/m2nZ9eQ.png"
+                media="(min-width: 1440px)"
+                height="43px"
+                width="156px"
+              />
+              <source
+                srcSet="https://i.imgur.com/4VrP2Bc.png"
+                media="(min-width: 1030px)"
+                height="33px"
+                width="113px"
+              />
+              <img src="https://i.imgur.com/83mqXDN.png" alt="logo" />
+            </picture>
+          </a>
+          <ul className="flex justify-center gap-10">
+            {footerlinks.map((item, index) => {
+              return (
+                <li key={index}>
+                  <a
+                    href={item.link}
+                    className="text-sm font-releway text-gray-40 l-150 3xl:text-lg 3xl:font-medium"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <ul className="flex gap-5">
+            {sociallinks.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className="p-2 bg-primary rounded-full text-white hover:scale-110 transition-all duration-300 ease-in-out"
+                >
+                  <a href={item.link}>{item.icon}</a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <p className="text-sm font-releway text-center py-10 3xl:text-lg l-150 ll2:text-base">
+          Copyright Ideapeel Inc © 2023. All Right Reserved
+        </p>
       </footer>
     </>
   );
